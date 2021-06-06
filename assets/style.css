@@ -1,0 +1,143 @@
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+body {
+    background-image: url("image/bg.jpeg");
+    background-size: contain;
+    background-repeat: repeat-y;
+}
+
+header {
+    background-image: url("image/circlesheader.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    border-bottom: 5px solid black;
+}
+
+:root {
+    --hottext: rgb(34, 223, 24);
+    --skewtext: rgb(250, 27, 180);
+    --superhottext: rgb(255, 255, 92);
+}
+
+h1 {
+    font-family: "Notable", sans-serif;
+    text-align: center;
+    color: var(--hottext);
+    font-size: 7vw;
+}
+
+h2 {
+    font-family: "Notable", sans-serif;
+    margin: 0px 40px 5px 40px;
+    text-align: center;
+    font-size: 3vw;
+    color: black;   
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px solid black;
+}
+
+a { 
+    font-family: "Notable", sans-serif;
+    margin: 0px 40px 5px 40px;
+    text-decoration: none;
+    font-size: 3vw;
+    color: var(--hottext);   
+}
+
+a:hover {
+    transform: skew(3deg);
+    color: var(--skewtext);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#biography {
+    width: 100%;
+    height: fit-content;
+    background: transparent;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+#work {
+    display: none;
+}
+
+.box {
+    margin: 10px 0px;
+    flex: 2 1 auto;
+    background: transparent;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.box p {
+    font-size: 2.5vw;
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.box img {
+    height: 100%;
+    width: 100%;
+    opacity: 40%;
+}
+
+.box img:hover {
+    opacity: 100%;
+}
+
+.box a {
+    font-size: 5vw;
+    color: black;
+}
+
+.box a:hover {
+    color: var(--skewtext);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-top: 5px solid black;
+}
+
+footer {
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    width: 100%;
+    background-image: url("image/circlesfooter.png");
+    background-size: cover;
+}
+
+#contactlinks {
+    border-top: 5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
