@@ -2,18 +2,17 @@
     margin: 0px;
     border: 0px;
     padding: 0px;
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 body {
-    background-image: url("image/bg.jpeg");
+    background-image: url("image/patternLINES.jpeg");
     background-size: contain;
     background-repeat: repeat-y;
 }
 
 header {
-    background-image: url("image/circlesheader.png");
-    background-size: cover;
+    background-color: whitesmoke;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -28,14 +27,14 @@ header {
 }
 
 h1 {
-    font-family: "Notable", sans-serif;
+    font-family: 'Rubik Mono One', sans-serif;
     text-align: center;
     color: var(--hottext);
     font-size: 7vw;
 }
 
 h2 {
-    font-family: "Notable", sans-serif;
+    font-family: 'Rubik Mono One', sans-serif;
     margin: 0px 40px 5px 40px;
     text-align: center;
     font-size: 3vw;
@@ -43,6 +42,8 @@ h2 {
 }
 
 nav {
+    background-color: whitesmoke;
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -52,9 +53,9 @@ nav {
 }
 
 a { 
-    font-family: "Notable", sans-serif;
-    margin: 0px 40px 5px 40px;
+    font-family: 'Rubik Mono One', sans-serif;
     text-decoration: none;
+    margin: 0px 35px 0px 35px;
     font-size: 3vw;
     color: var(--hottext);   
 }
@@ -66,28 +67,25 @@ a:hover {
 
 main {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 #biography {
+    background-color: whitesmoke;
     width: 100%;
     height: fit-content;
-    background: transparent;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
 }
 
-#work {
-    display: none;
-}
-
 .box {
-    margin: 10px 0px;
+    background-color: whitesmoke;
+    margin: 30px 0px 30px 0px;
     flex: 2 1 auto;
-    background: transparent;
+    width: 100%;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
 }
@@ -102,7 +100,7 @@ main {
 .box img {
     height: 100%;
     width: 100%;
-    opacity: 40%;
+    opacity: 60%;
 }
 
 .box img:hover {
@@ -128,14 +126,14 @@ main {
 }
 
 footer {
+    background-color: transparent;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
     width: 100%;
-    background-image: url("image/circlesfooter.png");
-    background-size: cover;
 }
 
 #contactlinks {
+    background-color: whitesmoke;
     border-top: 5px solid black;
     display: flex;
     align-items: center;
